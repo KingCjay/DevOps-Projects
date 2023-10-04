@@ -1,6 +1,6 @@
 # WEB STACK IMPLEMENTATION LEMP STACK (Linux,NGINX,MySQL and PHP) 
 
-## Prerequistes 
+## Prerequisites 
 
 - Cloud Service Providers; AWS,Azure,GCP,etc.
 - Launch a Linux instance on ubuntu(prefarbly).
@@ -13,7 +13,7 @@ It's always the best practice and a first step to update your server before any 
 
 ![Alt text](images/apt-update.png)
 
-To install Nginx, run the command below;
+To install Nginx, run the command below; 
 
 `sudo apt install nginx -y` (y for the prompt Yes?No question to install)
 
