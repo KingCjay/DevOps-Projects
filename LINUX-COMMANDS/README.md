@@ -28,7 +28,9 @@ Short for superuser do. Lets you perform tasks the require administrative or roo
 
 Used to find the path of your Present Working Directory. Simply entering pwd will return full current path - a path of all the directories that starts with a forward slash(/). 
 
+![Alt text](images/pwd.png)
 
+![Alt text](images/pwd2.png)
 
 ### 3. `ls` command:
 
@@ -36,7 +38,7 @@ The ls command lists files and directories within a system/interface. Running it
 
 `ls`
 
-
+![Alt text](images/ls.png)
 
 Here are some Options for the ls command:
 
@@ -60,21 +62,21 @@ The touch command allows you to create an empty file.
 
 `touch myfile1-index.html`
 
-
+![Alt text](images/touch-myfile.png)
 
 ### 5. `cat` command:
  
 The cat command lists,combines and writes  file content to the standard output.
 
-`cat myindex.html`
+`cat myfile1-index.html`
 
-
+![Alt text](images/cat-myfile1.png)
 
 Other ways to use cat command 
 
 `cat file1.txt file2.txt > file3.txt`
 
-
+![Alt text](images/cat-file2%3E.png)
 
 Merges/combines file1.txt and file2.txt and stores the output in file3.txt
 
@@ -90,19 +92,25 @@ This command is used to navigate through the linux files and directories. Depend
 
 Running this command without an option takes you to the home folder.
 
+This takes you into the LinuxCommands directory:
+
 `cd /home/ubuntu/LinuxCommands`
 
+![Alt text](images/cd.png)
+
+`cd` alone takes yo back to the home folder.
 
 `cd`
 
+`cd ..` takes you one folder back from the current directory
 
 `cd ..`
 
+![Alt text](images/cd-...png)
 
+`cd -` takes you one folder front from the current directory
 
-`cd -`
-
-
+![Alt text](images/cd-.png)
 
 `cd ~`
 
@@ -290,10 +298,6 @@ Programmers often use the diff command to alter a program instead of rewriting t
 
 The tar command archieves multiple files into a TAR file, more like the ZIP command.
 
-`tar file1.txt file2.txt`
-
-
-
 For instance, you want ot create a new TAR archive named myfilearchive.tar in the /home/ubuntu directory:
 
 `tar -cvf myfile1archive.tar /home/ubuntu`
@@ -340,9 +344,11 @@ To kill a program, you must know its process identification number(PID). If you 
 
 After knowing what signal to use and the program's PID, enter the following syntax:
 
-`kill    pid`
+`kill pid` in this case the number 21989 is the PID 
 
+![Alt text](images/kill-pid.png)
 
+![Alt text](images/pid-killed.png)
 
 There are 64 signals we can use, but the two most commonly used are:
 
@@ -411,3 +417,7 @@ The history command list up to 500 previously executed commands, allowing you to
  `history`
 
 ![Alt text](images/history.png)
+
+There are so many other file permisssions and ownership commands like the `chown`,`chmod`,`jobs`,`ping`,`unname`,`useradd`,`userdel`,`apt-get` etc which will be in used classes commence.
+
+It shall be updated when seen a clear use of it for better understanding.
