@@ -57,22 +57,20 @@ sudo systemctl restart apache2
 
 Follw the steps below to run the script:
 
-**Step 1**: Provision an EC2 instance running ubuntu 22.04.3.
+**Step 1**: Provision an EC2 instance running ubuntu 22.04.3. in the two webservers.
 
-**Step 2**: Open port 8000 to allow traffic from anywhere using the security group. 
+**Step 2**: Open port 8000 to allow traffic from anywhere using the security group
 
 **Step 3**: Connect to the web server via the terminal using SSH client
 
 **Step 4**: Open a file and paste the script above 
-
-`cat install.sh`
 
 **Step 5**: Change permissions on the file to make it executable with the command 
 `sudo chmod u+x install.sh`
 
 **Step 6**: Run the script with the command below
 
-`./install.sh`
+`./install.sh PUBLIC_IP_ADDRESS`
 
 ## Deployment of Nginx as a Loadbalancer using the Shell Script
 
@@ -149,16 +147,22 @@ sudo systemctl restart nginx
 
 **Step 2**: Copy and paste the above script inside the file
 
-`cat nginx.sh`
-
-
 **Step 3**: Change the file permission to make it an executable using the command below 
 
-`sudo chmod u+x nginx.sh`
+`chmod u+x nginx.sh`
 
 **Step 4**: Run the script with the command 
 
-`./nginx.sh`
+`./nginx.sh PUBLIC_IP_ADDRESS Webserver_1 Webserver_2`
 
+In my project, its like this ***./nginx.sh 16.171.15.215 16.170.254.211:8000 13.53.40.240:8000*** 
 
+**Result**: The Nginx Server acts as a loadbalancer for the two websevers. The webservers changes as you reload your nginx server.
 
+![Alt text](<images/Screenshot 2023-10-14 at 17.18.49.png>)
+
+![Alt text](<images/Screenshot 2023-10-14 at 17.19.06.png>)
+
+![Alt text](images/auto-server1.png)
+
+![Alt text](images/auto-server2.png)
