@@ -312,6 +312,8 @@ Lets proceed using the steps below:
 
 **step 1**: On your terminal open a file ***backup.sh*** using the command `touch backup.sh` 
 
+![Alt text](images/the-process.png)
+
 **step 2**: Copy and paste the code block below into the file.
 ```php
 #!/bin/bash
@@ -333,11 +335,16 @@ mkdir -p "$backup_dir_with_timestamp"
 cp -r "$source_dir"/* "$backup_dir_with_timestamp"
 
 # Display a message indicating the backup process is complete
-echo "Backup completed. Files copied to: $backup_dir_with_timestamp"
+echo "Backup completed. Files copiedh_timestamp"
 ```
+
+`cat backup.sh`
+
+![Alt text](images/cat-backupsh.png)
 
 **step 3**: Set execute permission on ***backup.sh*** using the command `sudo chmod u+x backup.sh`
 
 **step 4**: Run your script using the command : `./backup.sh` 
 
-![Alt text](images/file-backup.png)
+![Alt text](images/backup-works.png)
+
