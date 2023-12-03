@@ -139,6 +139,8 @@ Update `site.yml` with `import_playbook: ../static-assigments/common-del.yml` in
 
 `ansible-playbook -i inventory/dev.yml playbooks/site.yml`
 
+![Alt text](images/delete-wireshark-gatherfacts.png)
+
 Make sure that `wireshark` is deleted on all the servers by running `wireshark --version`
 
 ![Alt text](images/wireshark-not-found-lb.png)
@@ -318,6 +320,8 @@ Now run the playbook against your `uat` inventory and see what happens:
 `cd /home/ubuntu/ansible-config-mgt`
 
 `ansible-playbook -i /inventory/uat.yml playbooks/site.yml`
+
+![Alt text](images/image-of-playbook2.png)
 
 We should be able to see both our UAT Web servers configured and we can try to reach them from the browser;
 
